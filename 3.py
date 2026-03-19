@@ -1,7 +1,33 @@
-n = int(input("enter the value of e:  "))
+print("select your ride: ")
+print("1. bike")
+print("2. car")
 
 
-print("numbers from {0} to {1} are: ".format(n, 1))
+choice = int( input("enter your choice:  "))
 
-for i in range(n,0,-1):
-    print(i)
+
+if( choice == 1):
+    print("what time of bike? ")
+    print("1. scooty\n")
+    print("2.scooter\n")
+
+    choice2=int(input("enter your choice2:  "))
+    if choice2==1:
+        print("you have selected scooty")
+    else:
+        print("you have selected scooter")
+
+    
+elif( choice == 2):
+    print("you have selected car")
+    print("what type of car?")
+    print("1.sudan")
+    print("2.suv")
+    choice3=int(input("enter your choice3:  "))
+
+    if choice3==1:
+        print("you have selected sudan")
+    else:
+        print("you have selected suv")
+else:
+    print("Wrong choice!!!")
